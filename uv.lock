@@ -521,6 +521,18 @@ wheels = [
 ]
 
 [[package]]
+name = "docs2txt"
+version = "0.1.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5d/10/dd317d691e94397477904ed849009e277c9bdeca3d5fa63e20e1aa5fd33b/docs2txt-0.1.2.tar.gz", hash = "sha256:ad1ef5cacf4a0845f6305dab76e910fa71d15208d4dc72c8bf4130dec1d29409", size = 11118, upload-time = "2023-07-09T22:51:13.891Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1b/5d/9683ca603a6fa803b343ff1c05d9634c739628973996a1962323a44bd715/docs2txt-0.1.2-py2.py3-none-any.whl", hash = "sha256:a0b2ad957bdaf812abeeb1d8dc305bb7857b318f075b49d376261c6aae293a12", size = 6110, upload-time = "2023-07-09T22:51:12.316Z" },
+]
+
+[[package]]
 name = "emoji"
 version = "2.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2550,6 +2562,7 @@ name = "rag-project"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "docs2txt" },
     { name = "faiss-cpu" },
     { name = "fastapi" },
     { name = "hf-xet" },
@@ -2574,6 +2587,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "docs2txt", specifier = ">=0.1.2" },
     { name = "faiss-cpu", specifier = ">=1.13.0" },
     { name = "fastapi", specifier = ">=0.123.0" },
     { name = "hf-xet", specifier = ">=1.2.0" },
